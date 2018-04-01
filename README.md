@@ -18,7 +18,7 @@ Import the project as maven project the eclipse.
                                          
                                          
                                          
-                                         
+Once Above Setup completes then perform  maven clean and maven install (Right click on project -> Run As -> Maven Clean and then Maven Install)                                     
 
 Right click on the project click Run As and than run on server.
 Application starts with BYTEWHEELS home page
@@ -34,4 +34,7 @@ enddate will come(I have kept it according to my hardcoded data) which can be mo
 4. As the database is hardcoded , After booking a car you can see the updated available cars within the same session.(Meaning you can go and select date again and upon selection this time table will have updated available cars or "NOT AVAILABLE" in the available car column.
 5. Sending Invoice to Email id has not been implemented. Upon successful booking it will just show email has been sent to this <Email ID>.
 
-so describe the challenges you faced, amount of work done and any necessary information that you think will be valuable for us to 
+Challenges
+    I was having probleam with Tomcat version 7.5, whenever i will run application, servlet initialization will fail throwing EL Manger exception.So for that reason i used tomcat 8.5.
+   
+    
