@@ -28,11 +28,15 @@
 
 			<table cellspacing="10" class="table table-hover">
 				<tr>
-					<td><h4>Showing List of cars Details for Selected Date</h4></td>
+					<td><h4>Available Cars Details</h4></td>
+					
 					<td><h5><a href="/BYTEWHEELS/DateSelector.html">Change Booking Date</a></h5></td>
+					
 				</tr>
 			</table>
+			<hr>
 			<br>
+			
 			<table cellpadding="5" border="1" class="table table-hover">
 				<tr>
 					<th>Model</th>

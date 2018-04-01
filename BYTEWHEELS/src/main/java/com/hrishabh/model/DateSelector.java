@@ -1,18 +1,14 @@
 package com.hrishabh.model;
 
 import java.util.Date;
-
-import javax.validation.constraints.Future;
-
-import org.springframework.format.annotation.DateTimeFormat;
+import com.hrishabh.IsValiddate;
 
 public class DateSelector {
 
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
-	//@Future
+	@IsValiddate
 	private Date startdate;
 
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@IsValiddate
 	private Date enddate;
 
 	private String type;

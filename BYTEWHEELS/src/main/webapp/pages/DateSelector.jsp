@@ -15,7 +15,7 @@
 	<hr>
 	<h3>Select Travel Date</h3>
 	</div>
-	<form:errors path="selector.*"/>
+	<form:errors path="selector.*" class="alert alert-danger fade in"/>
 	<hr>
 	<br>
 	

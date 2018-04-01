@@ -14,7 +14,7 @@ import javax.validation.Payload;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface IsValiddate {
 
-	String message() default "Please provide a valid date";
+	String message() default "Please Provide a valid date in the format of dd/mm/yyyy";
 
 	Class<?>[] groups() default {};
 

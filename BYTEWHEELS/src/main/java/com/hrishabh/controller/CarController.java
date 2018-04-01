@@ -1,18 +1,14 @@
 package com.hrishabh.controller;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 import java.util.List;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -35,12 +31,6 @@ public class CarController {
 	@Autowired
 	ServletContext context;
 
-	@InitBinder
-	public void validatedate(WebDataBinder binder) {
-		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-		binder.registerCustomEditor(Date.class, "startdate", new CustomDateEditor(format, false));
-		binder.registerCustomEditor(Date.class, "enddate", new CustomDateEditor(format, false));
-	}
 
 	@ModelAttribute
 	public void headerInit(Model model) {
