@@ -1,8 +1,24 @@
 # BYTEWHEELS
 
 
-Steps to run the project
+Steps to run the project:
+
 Import the project as maven project the eclipse.
+    Right Click on project -> Properties ->Java Build Path     ->jre 1.8 ,jdk 1.8
+                                                               ->Maven Dependencies
+                                                               ->Web App Libraries
+                                                               ->Tomcat Library
+                                         -> Deployment Assembly-> Click Add -> Select Java Build Path Entries-> Next -> Select Maven Dependencies   
+                                                               -> Click Add -> Folder-> /src/main/webapp then click Finish
+                                         -> Java Compiler -> Set Compiler compilance level: 1.8 -> Click Apply 
+                                         ->Project facets  -> Check Dynamic Web module (2.2)
+                                                           -> Java (1.8)
+                                                           -> JavaScript (1.0)
+                                         ->Targeted Runtimes-> Select Apache/or any other webserver and then Apply
+                                         
+                                         
+                                         
+                                         
 
 Right click on the project click Run As and than run on server.
 Application starts with BYTEWHEELS home page
