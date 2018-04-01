@@ -47,7 +47,7 @@
 		
 		<br>
 		<hr>
-		<h3>We have sent Invoice mail to your mailId : <%=session.getAttribute("emailId")%></h3>
+		<h3>We have sent Invoice mailId : <%=session.getAttribute("emailId")%></h3>
 		<h3>Thank You for Booking with us. </h3>
 		
 	</div>

@@ -61,7 +61,7 @@
 
 			<table cellspacing="7" class="table table-hover">
 				<tr>
-					<td><h4>Check Booking Details</h4></td>
+					<td><h4>Enter Booking Details</h4></td>
 					<td><h5><a href="/BYTEWHEELS/DateSelector.html">Change Booking
 							Date</a></h5></td>
 				</tr>
@@ -94,7 +94,7 @@
 						value="${car.noOfDaysSelected}" readonly class="field left"  /></td>
 				</tr>
 				<tr>
-					<td>Choose no cars :</td>
+					<td>Choose no of cars :</td>
 					<td><input type="text" name="noOfCarsSelected"
 						class="form-control"
 						title="It should be less than or equal to available no of car" /></td>
