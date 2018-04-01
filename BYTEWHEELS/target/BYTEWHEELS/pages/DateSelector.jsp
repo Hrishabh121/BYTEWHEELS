@@ -7,12 +7,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
 <title>BYTEWHEELS</title>
+
+
 </head>
 <body>
-	<h2>${msg}</h2>
-
-	<h3>Select Date Range to Rent Car</h3>
-	
+	<div align="center"><h2>${msg}</h2>
+	<hr>
+	<h3>Select Date to Rent Car</h3>
+	</div>
 	<br>
 	<form:errors path="selector.*"/>
 	<br>
@@ -24,16 +26,16 @@
 			<tr>
 				<td>Select Start Date :</td>
 				<td><input type="text" name="startdate"
-					placeholder="dd/mm/yyyy" value="30/03/2018"/></td>
+					placeholder="dd/mm/yyyy" value="01/04/2018" class="form-control"/></td>
 			</tr>
 			<tr>
 				<td>Select End Date :</td>
 				<td><input type="text" name="enddate" 
-					placeholder="dd/mm/yyyy" value="04/04/2018"/></td>
+					placeholder="dd/mm/yyyy" value="07/04/2018" class="form-control"/></td>
 			</tr>
 			<tr>
-				<td>Select Type of cars :</td>
-				<td><select name="type">
+				<td>Select Type of car :</td>
+				<td><select name="type" class="dropdown" class="dropdown-menu">
 						<option value="All">All Cars</option>
 						<option value="Compact">Compact</option>
 						<option value="Full">Full</option>
@@ -45,7 +47,7 @@
 			
 		</table>
 		<br>
-		<input type="submit" value="Submit" >
+		<input type="submit" value="Submit" class="btn btn-light">
 		</div>
 	</form>
 </body>

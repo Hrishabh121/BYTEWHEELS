@@ -11,19 +11,20 @@
 <body>
 <div align="center"><h2>${msg}</h2>
 	<hr>
-	<h4>Invoice of Your Ride</h4>
+	<h4>Invoice</h4>
 	</div>
-	
+	<hr>
 	<div align="center" style="border: thick;" class="container">
 	
 		<table cellspacing="7" class="table table-hover">
 			<tr>
-				<td><h4>Check Booking Details</h4></td>
+				<td><h4>Invoice Details</h4></td>
 				<td><h4><a href="/BYTEWHEELS/DateSelector.html">Book Again</a></h4></td>
 			</tr>
-			
+		
 		</table>
-
+		<hr>
+		<br>
 		<table border="1" cellspacing="2" cellpadding="5" class="table table-hover">
 			<tr>
 				<td>Per Day Car Cost($):</td>
@@ -47,8 +48,8 @@
 		
 		<br>
 		<hr>
-		<h3>We have sent Invoice mailId : <%=session.getAttribute("emailId")%></h3>
-		<h3>Thank You for Booking with us. </h3>
+		<h3>Please Check Mail for Invoice Details of Your Payment : <%=session.getAttribute("emailId")%></h3>
+		<h3>Thank You for Booking with us.. </h3>
 		
 	</div>
 	

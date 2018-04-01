@@ -13,10 +13,10 @@
 <body>
 	<div align="center"><h2>${msg}</h2>
 	<hr>
-	<h3>Select Date to Rent Car</h3>
+	<h3>Select Travel Date</h3>
 	</div>
-	<br>
 	<form:errors path="selector.*"/>
+	<hr>
 	<br>
 	
 	<form action="/BYTEWHEELS/ListOfCars.html" method="post">

@@ -6,7 +6,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <title>BYTEWHEELS</title>
 
 <script>
@@ -40,68 +41,75 @@
 		}  
 		}  
 	
+	$(document).ready(function(){
+	    $('[data-toggle="popover"]').popover(); 
+	});
+	
 </script>
 
 </head>
 <body>
-	<h2>${msg}</h2>
+	<div align="center" class="container">
+		<h2>${msg}</h2>
+	</div>
+
 	<hr>
 
-	<form name="booking1" method="post" action="/BYTEWHEELS/generatebill.html"
-		onsubmit="return validateemail()">
+	<form name="booking1" method="post"
+		action="/BYTEWHEELS/generatebill.html" onsubmit="return validateemail()">
 		<div align="center" style="border: thick;" class="container">
 
 			<table cellspacing="7" class="table table-hover">
 				<tr>
-					<td><h4>Check Booking Details</h4></td>
-					<td><a href="/BYTEWHEELS/DateSelector.html">Change Booking
-							Date</a></td>
+					<td><h4>Enter Booking Details</h4></td>
+					<td><h5><a href="/BYTEWHEELS/DateSelector.html">Change Booking
+							Date</a></h5></td>
 				</tr>
 
 			</table>
 
-			<table class="table table-hover">
+			<table cellspacing="7" class="table table-hover">
 				<tr>
 					<td>Car Model :</td>
 					<td><input type="text" name="model" value="${car.model}"
-						class="field left" readonly /></td>
+						class="field left" readonly  class="field left" /></td>
 				</tr>
 				<tr>
 					<td>Car Type :</td>
 					<td><input type="text" name="type" value="${car.type}"
-						class="field left" readonly /></td>
+						class="field left" readonly  class="field left" /></td>
 				</tr>
 				<tr>
 					<td>Car Cost($):</td>
 					<td><input type="text" name="cost" value="${car.cost}"
-						class="field left" readonly /></td>
-				</tr>
+						class="field left" readonly  class="field left" />
 				<tr>
 					<td>Available cars :</td>
 					<td><input type="text" name="availableCar"
-						value="${car.availableCar}" class="field left" readonly /></td>
+						value="${car.availableCar}" readonly class="field left"  /></td>
 				</tr>
 				<tr>
-					<td>Selected days:</td>
+					<td>Selected no of Days:</td>
 					<td><input type="text" name="noOfDaysSelected"
-						value="${car.noOfDaysSelected}" class="field left" readonly /></td>
+						value="${car.noOfDaysSelected}" readonly class="field left"  /></td>
 				</tr>
 				<tr>
-					<td>Choose no of cars:</td>
+					<td>Choose no of cars :</td>
 					<td><input type="text" name="noOfCarsSelected"
-						placeholder=" <= available car" width="70%" /></td>
+						class="form-control"
+						title="It should be less than or equal to available no of car" /></td>
 				</tr>
 
 				<tr>
 					<td>Email Id :</td>
-					<td><input type="text" name="emailId"/></td>
+					<td><input type="text" name="emailId" class="form-control"
+						title="Should be in the format of abc@xyz.com" /></td>
 				</tr>
-
 			</table>
-			<br> <input type="submit" value="Confirm Booking">
-
+			<br>
+			<input type="submit" value="Submit" class="btn btn-light">
+			
 		</div>
-	</form>
-
+		</form>
 </body>
 </html>

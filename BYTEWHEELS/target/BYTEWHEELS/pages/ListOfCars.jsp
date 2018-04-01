@@ -21,15 +21,15 @@
 </script>
 </head>
 <body>
-	<h2>${msg}</h2>
-
+	<div align="center"><h2>${msg}</h2></div>
+	<hr>
 	<div align="center" style="border: thick;" class="container">
 		<form:form action="/booking.html" method="POST" name="booking">
 
 			<table cellspacing="10" class="table table-hover">
 				<tr>
 					<td><h4>Showing List of cars Details for Selected Date</h4></td>
-					<td><a href="/BYTEWHEELS/DateSelector.html">Change Booking Date</a></td>
+					<td><h5><a href="/BYTEWHEELS/DateSelector.html">Change Booking Date</a></h5></td>
 				</tr>
 			</table>
 			<br>
@@ -38,7 +38,6 @@
 					<th>Model</th>
 					<th>Cost($)</th>
 					<th>Type</th>
-					<th>Date</th>
 					<th>Available Cars</th>
 					<th>Book</th>
 				</tr>
@@ -54,7 +53,6 @@
 						<td><c:out value="${car.model}" /></td>
 						<td><c:out value="${car.cost}" /></td>
 						<td><c:out value="${car.type}" /></td>
-						<td><c:out value="${car.date}" /></td>
 						<td><c:out value="${car.availableCar}" /></td>
 						<td><c:choose>
 								<c:when test="${car.availableCar == 'NOT AVAILABLE'}">

@@ -9,16 +9,17 @@
 <title>BYTEWHEELS</title>
 </head>
 <body>
-<h2>${msg}</h2>
+<div align="center"><h2>${msg}</h2>
 	<hr>
-	<h4>Invoice for Your Ride</h4>
+	<h4>Invoice of Your Ride</h4>
+	</div>
 	
 	<div align="center" style="border: thick;" class="container">
 	
 		<table cellspacing="7" class="table table-hover">
 			<tr>
 				<td><h4>Check Booking Details</h4></td>
-				<td><a href="/BYTEWHEELS/DateSelector.html">Book Again</a></td>
+				<td><h4><a href="/BYTEWHEELS/DateSelector.html">Book Again</a></h4></td>
 			</tr>
 			
 		</table>
@@ -46,7 +47,7 @@
 		
 		<br>
 		<hr>
-		<h3>We have sent Invoice mail to your mailId : <%=session.getAttribute("emailId")%></h3>
+		<h3>We have sent Invoice mailId : <%=session.getAttribute("emailId")%></h3>
 		<h3>Thank You for Booking with us. </h3>
 		
 	</div>

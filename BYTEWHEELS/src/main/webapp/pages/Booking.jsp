@@ -52,7 +52,6 @@
 	<div align="center" class="container">
 		<h2>${msg}</h2>
 	</div>
-
 	<hr>
 
 	<form name="booking1" method="post"
@@ -67,7 +66,8 @@
 				</tr>
 
 			</table>
-
+			<hr>
+			<br>
 			<table cellspacing="7" class="table table-hover">
 				<tr>
 					<td>Car Model :</td>

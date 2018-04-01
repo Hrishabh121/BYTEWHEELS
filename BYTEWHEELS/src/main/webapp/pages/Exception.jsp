@@ -1,12 +1,19 @@
 <html>
 <head>
 <title>BYTEWHEELS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
-	<h2>BYTEWHEELS</h2>
+
+<div align="center" class="container">
+		<h2>BYTEWHEELS</h2>
+	</div>
 	
-	<div>
-		<h4>Some Internal Error has Occurred. </h4>
+	
+	<div align="center" style="border: thick;" class="container" >
+		<h4> Internal Error has Occurred. </h4>
 		<h4>Please report to System
 			admin. in case problem persist.</h4>
 			<br>
