@@ -30,7 +30,7 @@
 <br><br><br><br><br><br><br>
 
 <h2>Welcome to BYTEWHEELS</h2>
-<img src="resource/road-people-street-smartphone.jpg" alt="Bird" class="img-circle">
+<img src="resource/road-people-street-smartphone.jpg" alt="Car" class="img-circle">
 <br>
 <br>
 <a href="/BYTEWHEELS/DateSelector.html" class="btn btn-default btn-lg">BOOK CARS</a>
